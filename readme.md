@@ -1,7 +1,7 @@
 # Metrics API - under construction 
 
 ## Overview
-The Metrics API is a sample project designed to test observability techniques with Grafana. It provides endpoints to submit, retrieve, and analyze metrics data.
+This is a sample project designed to test observability techniques with Grafana. It provides endpoints to submit, retrieve, and analyze metrics data.
 
 ## Features
 - Collect metrics from different sources
