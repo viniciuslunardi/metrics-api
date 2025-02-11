@@ -6,7 +6,6 @@ import { logger } from "../shared/logger";
 import { metricsMiddleware , register } from "../shared/metrics";
 
 
-
 class Server {
     constructor(private readonly port: number) {}
 
@@ -28,7 +27,6 @@ class Server {
             logger.info(`Server running on port ${this.port}`);
         })
        
-        
         app.get("/metrics", async (req, res) => {
           res.set("Content-Type", register.contentType);
           res.end(await register.metrics());
