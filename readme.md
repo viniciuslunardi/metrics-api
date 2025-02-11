@@ -23,6 +23,7 @@ Start server
 ```bash
 npm start:dev
 ```
+The API will be available at `http://localhost:3000`.
 
 Run load test (must have K6[https://k6.io/] installed)
 
@@ -30,8 +31,13 @@ Run load test (must have K6[https://k6.io/] installed)
 npm test:load 
 ```
 
+Run Grafana with Prometheus, Loki e Promtail (must have docker installed)
+```bash
+cd infra/observability
+docker-compose up -d
+```
+Access localhost:3001 with "admin" "admin" and connect the Prometheus and Loki Datasource
 
-The API will be available at `http://localhost:3000`.
 
 ## Endpoints
 
